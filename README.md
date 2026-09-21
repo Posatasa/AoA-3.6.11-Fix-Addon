@@ -3,9 +3,6 @@
 A small client-side patch add-on for [Advent of Ascension 3](https://github.com/Tslat/Advent-Of-Ascension)  
 **1.16.5-3.6.11**.
 
-**Download:** [`dist/aoa3fixes-1.0.0.jar`](dist/aoa3fixes-1.0.0.jar) — drop it into `mods/`.  
-Checksum: [`dist/SHA256SUMS.txt`](dist/SHA256SUMS.txt).
-
 ## What it fixes
 
 - **Skills wiped on the host in LAN worlds.** When another player disconnects from a  
