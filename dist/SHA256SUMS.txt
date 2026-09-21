@@ -1,0 +1,1 @@
+56f2405c2beb6ee45db8e040b2ecae50d33b813b9d94c36207db14fe598b68e4 *aoa3fixes-1.0.0.jar

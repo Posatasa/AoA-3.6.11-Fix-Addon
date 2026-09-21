@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.posatasa.aoa3fixes.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "aoa3fixes.refmap.json",
+  "priority": 2000,
+  "client": [
+    "client.MixinAoAClientEventHandler"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "_comment": "This mod ships no assets at all, so it has no real pack content. This file exists purely to silence a warning: Forge's ResourcePackLoader creates a ModFileResourcePack for every non-minecraft mod file, and vanilla ResourcePackInfo.create() reads pack.mcmeta from it. When that read fails, ModFileResourcePack.func_195766_a throws ResourcePackFileNotFoundException, which ResourcePackInfo catches and reports as: Couldn't get pack info for: ... 'pack.mcmeta' in ResourcePack '<path to this jar>'. Every mod without a pack.mcmeta logs that line on every launch, and there is no opt-out in Forge 1.16.5. pack_format 6 is the 1.16.x format; its value is irrelevant here because there is nothing to load.",
+  "pack": {
+    "pack_format": 6,
+    "description": "AoA3 1.16.5 Fixes - client-side patch add-on (no assets)"
+  }
+}

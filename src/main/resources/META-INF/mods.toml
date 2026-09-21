@@ -1,0 +1,46 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="aoa3fixes"
+version="${version}"
+displayName="AoA3 1.16.5 Fixes"
+authors="Posatasa"
+description='''
+Client-side patch add-on for Advent of Ascension 3 (Minecraft 1.16.5, AoA version 3.6.11).
+It contains none of AoA's code or assets; it rewrites a few instructions at class-load time.
+
+1. Fixes skills/resource data being wiped on the host's client in singleplayer-LAN worlds
+   whenever another player disconnects (the Advent GUI then wrongly claims
+   "Skills have been disabled by the server owner").
+
+2. Fixes the player's entity attack range being silently raised from 3.0 to ~4.5 blocks in
+   Survival, caused by AoA disabling vanilla's 3-block entity-targeting cap.
+'''
+
+[[dependencies.aoa3fixes]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.aoa3fixes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.aoa3fixes]]
+    modId="aoa3"
+    mandatory=false
+    # AoA versions the whole build, so the mod version literally reads "1.16.5-3.6.11" and the
+    # "1.16.5-" prefix cannot be dropped. A range of "[3.6.0,)" silently never matches:
+    # version comparison walks the components left to right, so "1.16.5-3.6.11" starts with 1
+    # and sorts *below* "3.6.0". The dependency would then never be satisfied and ordering="AFTER"
+    # would have no effect at all.
+    versionRange="[1.16.5-3.6.11,)"
+    ordering="AFTER"
+    side="BOTH"
