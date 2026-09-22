@@ -1,6 +1,6 @@
 # AoA3 1.16.5 Fixes
 
-A small client-side patch add-on for [Advent of Ascension 3](https://github.com/Tslat/Advent-Of-Ascension) **1.16.5-3.6.11**.
+A add-on bug-fixing mod  for [Advent of Ascension](https://github.com/Tslat/Advent-Of-Ascension) **1.16.5-3.6.11**.
 
 ## What it fixes
 
